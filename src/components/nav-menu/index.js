@@ -37,7 +37,7 @@ class NavMenu extends React.Component {
         <Navbar collapseOnSelect expand='xxxl' bg='dark' variant='dark' style={{ paddingRight: '20px' }}>
           <Navbar.Brand href='#home' style={{ paddingLeft: '20px' }}>
             <Image src={Logo} thumbnail width='50' />{' '}
-            P2WDB BCH Explorer
+            P2WDB XEC Explorer
           </Navbar.Brand>
 
         </Navbar>

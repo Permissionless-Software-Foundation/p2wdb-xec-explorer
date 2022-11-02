@@ -8,7 +8,7 @@ import { Container, Row, Col, Table, Card } from 'react-bootstrap'
 import axios from 'axios'
 import { DatatableWrapper, TableBody, TableHeader } from 'react-bs-datatable'
 
-const SERVER = 'https://p2wdb.fullstack.cash/'
+const SERVER = 'https://xec-p2wdb.fullstack.cash/'
 
 const TABLE_HEADERS = [
   {
@@ -124,8 +124,8 @@ class P2WDBExplorer extends React.Component {
         const row = {
           // createdAt row data
           createdAt: new Date(entry.createdAt).toLocaleString(),
-          txid: (<a href={`https://blockchair.com/bitcoin-cash/transaction/${entry.key}`} target='_blank' rel='noreferrer'>{this.cutString(entry.key)}</a>),
-          hash: (<a href={`https://p2wdb.fullstack.cash/entry/hash/${entry.hash}`} target='_blank' rel='noreferrer'>{this.cutString(entry.hash)}</a>),
+          txid: (<a href={`https://explorer.be.cash/tx/${entry.key}`} target='_blank' rel='noreferrer'>{this.cutString(entry.key)}</a>),
+          hash: (<a href={`${SERVER}entry/hash/${entry.hash}`} target='_blank' rel='noreferrer'>{this.cutString(entry.hash)}</a>),
           appId: entry.appId || 'none'
         }
         data.push(row)
